@@ -1,0 +1,25 @@
+table {
+    background: hsl(60, 91%, 59%);
+    text-align: center;
+    width: 94%;
+    margin: 2%;
+    border: 1pt hsl(240, 100%, 25%) solid;
+}
+caption {
+    font: 120% bold;
+}
+thead, tfoot{
+    background: hsl(240, 100%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-size: 110%;
+    padding: 5pt;
+}
+td, th {
+    border: 1pt solid hsl(240, 100%, 25%);
+}
+tfoot a {
+    color: hsl(0, 0%, 100%);
+}
+*.parzysty {
+    background: hsl(0, 0%, 100%);
+}

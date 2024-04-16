@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Dotacja </title>
+</head>
+<body>
+    <div id="kontener">
+        <div id="baner"><h2>Formularz dotacji</h2></div>
+        <div id="tresc">
+            <form action="#" method="get">
+                <fieldset>    
+                    Beneficjent: <input list="beneficjenci" type="text" name="beneficjent" required pattern=".{3,}" title="Podaj beneficjenta dla którego chcesz złożyć dotacje, lub wybierz z list podpowiedzi nazw organizacji. Nazwa beneficjenta musi składać się z minimum 3 znaków."><br>
+                    <datalist id="beneficjenci">
+                        <option value="Fundacja EPICRATES"></option>
+                        <option value="SŁONECZKO Stowarzyszenie Pomocy Osobom Niepełnosprawnym"></option>
+                        <option value="Fundacja PO PROSTU POMAGAM"></option>
+                        <option value="Lubelskie Stowarzyszenie Samopomocy"></option>
+                        <option value="Stowarzyszenie Młodych Naukowców"></option>
+                    </datalist>
+                    Wartość dotacji: <input type="number" name="dotacja" step="5" min="20" required title="Podaj kwotę dotacji, minimalna dotacja wynosi 20.">
+                </fieldset>
+                <fieldset>
+                    <legend>Dane karty płatniczej</legend>
+                    Karta:
+                    <input type="radio" name="dodatek" value="visa" required> Visa
+                    <input type="radio" name="dodatek" value="master-card" required> Master Card <br>
+                    Numer: <input type="tel" name="numer" required pattern="(?:\d{13})|(?:\d{16})" title="Podaj numer karty złożony z 13 do 16 cyfr , który znajduje się na jej przodzie."><br>
+                    Data ważności: <input type="date" name="data-waznosci" required title="Podaj datę ważności twojej karty, która znajduje się na jej przodzie."><br>
+                    Kod CVV: <input type="text" name="cvv" required pattern="\d{3,4}" title="Podaj kod CVV złożony z 3 lub 4 cyfr podanych na odwrocie karty."><br>
+                </fieldset>
+                Darczyńca: <input type="text" name="darczynca" pattern=".{3,}" title="Podaj nazwe darczyńcy. Nazwa darczyńcy musi składać się z minimum 3 znaków."><br>
+                <input type="reset" value="Wyczyść">
+                <input type="submit" value="Rejestruj">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

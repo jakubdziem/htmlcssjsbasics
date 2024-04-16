@@ -1,0 +1,12 @@
+article h3 {
+    text-align: center;
+}
+#zdjecia {
+    margin:1%;
+    width: 90%;
+    padding: 0% 5%;
+}
+*.miniaturki {
+    width: 30%;
+    padding: 1%;
+}
